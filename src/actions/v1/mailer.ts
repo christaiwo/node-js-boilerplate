@@ -25,7 +25,7 @@ const sendMail = async (
         extname: ".html",
         defaultLayout: false,
       },
-      viewPath: `${process.cwd()}/views/v1/mails/`,
+      viewPath: `${process.cwd()}/src/views/v1/mails/`,
       extName: ".html",
     })
   );
