@@ -9,12 +9,12 @@ const sendMail = async (
 ) => {
   // Step 1: Create a transporter object
   const transporter = nodemailer.createTransport({
-    // host: process.env.MAIL_HOST,
-    // port: process.env.MAIL_PORT,
-    // auth: {
-    //   user: process.env.MAIL_USERNAME,
-    //   pass: process.env.MAIL_PASSWORD,
-    // },
+    host: process.env.MAIL_HOST,
+    port: Number(process.env.MAIL_PORT),
+    auth: {
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
+    },
   });
 
   // Step 2: Set up the handlebars engine
