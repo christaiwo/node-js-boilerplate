@@ -3,7 +3,7 @@ import Jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import sendMail from "../../../actions/v1/mailer";
 import express from "express";
-import { RequestType } from "type/RequestType";
+import { RequestType } from "type/v1/RequestType";
 
 // registration function
 export const authRegister = async (req: RequestType, res: express.Response) => {

@@ -1,4 +1,4 @@
-import { RequestType } from "type/RequestType";
+import { RequestType } from "type/v1/RequestType";
 import asyncWrapper from "../../../middlewares/v1/asyncWrapper";
 import prisma from "../../../prismaClient";
 import express from "express";

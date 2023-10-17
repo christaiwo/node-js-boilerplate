@@ -1,6 +1,6 @@
 import { body, validationResult } from "express-validator";
 import express, { NextFunction } from "express";
-import { RequestType } from "type/RequestType";
+import { RequestType } from "type/v1/RequestType";
 export const authRegisterValidation = [
   body("first_name")
     .notEmpty()
